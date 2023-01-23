@@ -1,0 +1,2955 @@
+# Compile of ALU593_design_simple.sv failed with 2 errors.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv failed with 2 errors.
+# Compile of scoreboard.sv failed with 12 errors.
+# Compile of tester.sv failed with 3 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 6 failed with 22 errors.
+# Compile of ALU593_design_simple.sv failed with 2 errors.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv failed with 2 errors.
+# Compile of scoreboard.sv failed with 12 errors.
+# Compile of tester.sv failed with 3 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 6 failed with 22 errors.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv failed with 2 errors.
+# Compile of scoreboard.sv failed with 12 errors.
+# Compile of tester.sv failed with 3 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 5 failed with 20 errors.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv failed with 2 errors.
+# Compile of scoreboard.sv failed with 12 errors.
+# Compile of tester.sv failed with 3 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 5 failed with 20 errors.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv failed with 2 errors.
+# Compile of scoreboard.sv failed with 12 errors.
+# Compile of tester.sv failed with 3 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 5 failed with 20 errors.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv failed with 1 errors.
+# Compile of scoreboard.sv failed with 12 errors.
+# Compile of tester.sv failed with 3 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 5 failed with 19 errors.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv failed with 2 errors.
+# Compile of package.sv was successful.
+# Compile of scoreboard.sv failed with 1 errors.
+# Compile of tester.sv failed with 1 errors.
+# Compile of top.sv failed with 1 errors.
+# 6 compiles, 4 failed with 5 errors.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv failed with 1 errors.
+# Compile of package.sv was successful.
+# Compile of scoreboard.sv was successful.
+# Compile of tester.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv was successful.
+# Compile of package.sv was successful.
+# Compile of scoreboard.sv was successful.
+# Compile of tester.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.top
+# vsim -gui work.top 
+# Start time: 10:59:48 on Jan 23,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): N:\pre_si\asgt2\scoreboard.sv(18): (vopt-13215) Case item comparison:  Cannot assign an unpacked type 'reg[15:0] $[31:0]' to a packed type 'shortint'.
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 10:59:51 on Jan 23,2023, Elapsed time: 0:00:03
+# Errors: 2, Warnings: 10
+# Compile of ALU593_design_simple.sv was successful.
+# Compile of bfm.sv was successful.
+# Compile of package.sv was successful.
+# Compile of scoreboard.sv was successful.
+# Compile of tester.sv was successful.
+# Compile of top.sv was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.top
+# vsim -gui work.top 
+# Start time: 11:00:30 on Jan 23,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.ALU593_pkg(fast)
+# Loading work.top(fast)
+run -all
+# ** Error: FAILED: A: 9  B: ff  op: mul_op result: 0
+#    Time: 90 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 65  B: 1  op: rsvd4 result: 8f7
+#    Time: 150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 3d  B: 8c  op: rsvd4 result: 8f7
+#    Time: 210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: c5  B: e5  op: store result: 8f7
+#    Time: 270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 8f  B: ce  op: sp_func3 result: 24f
+#    Time: 330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 5c  B: 2d  op: load result: x
+#    Time: 390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 80  op: sp_func1 result: b6
+#    Time: 450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 9d  B: 13  op: no_op result: 0
+#    Time: 510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: rsvd4 result: 0
+#    Time: 550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ae  B: cf  op: sp_func1 result: 2fd
+#    Time: 610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ca  B: 0  op: xor_op result: 61
+#    Time: 670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 41  B: 0  op: and_op result: 0
+#    Time: 730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: eb  B: c6  op: load result: x
+#    Time: 790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: b  op: rsvd5 result: x
+#    Time: 850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 4f  B: ff  op: add_op result: b
+#    Time: 910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 15  B: d9  op: rsvd1 result: 14e
+#    Time: 970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: and_op result: 11
+#    Time: 1030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: no_op1 result: 0
+#    Time: 1090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: ff  op: no_op1 result: 0
+#    Time: 1150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: d0  B: ff  op: store result: 0
+#    Time: 1210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: c  B: c8  op: add_op result: 1cf
+#    Time: 1270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 12  B: 6d  op: sp_func3 result: 24
+#    Time: 1330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: store result: 36
+#    Time: 1390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: 2fd
+#    Time: 1450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 58  op: store result: 1fe
+#    Time: 1510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 9c  B: 26  op: sp_func2 result: 1fe
+#    Time: 1570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: xor_op result: ba
+#    Time: 1630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: xor_op result: 0
+#    Time: 1690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 5a  op: sp_func3 result: 2fd
+#    Time: 1750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: da  B: b5  op: store result: 2fd
+#    Time: 1810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 44  B: 0  op: no_op1 result: 0
+#    Time: 1870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: dc  op: rsvd1 result: 0
+#    Time: 1930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: c3  B: 4e  op: rsvd1 result: 0
+#    Time: 1990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: b6  B: 0  op: sp_func3 result: 249
+#    Time: 2050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: store result: 222
+#    Time: 2110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: db  op: xor_op result: 0
+#    Time: 2170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 6d  B: ca  op: rsvd4 result: db
+#    Time: 2230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 46  B: 0  op: sp_func2 result: da
+#    Time: 2290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: b4  B: 0  op: sp_func3 result: d2
+#    Time: 2350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: c7  B: 8  op: load result: x
+#    Time: 2410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 29  B: 0  op: rsvd3 result: x
+#    Time: 2470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 3d  B: 70  op: sp_func2 result: 52
+#    Time: 2530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 5e  B: d5  op: xor_op result: 4d
+#    Time: 2590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 37  B: c0  op: rsvd1 result: 8b
+#    Time: 2650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 7d  B: 0  op: sp_func2 result: 6e
+#    Time: 2710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: db  op: sp_func2 result: fa
+#    Time: 2770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: fa  B: 17  op: no_op1 result: 0
+#    Time: 2830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 50  B: 35  op: add_op result: 111
+#    Time: 2890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: c5  B: 0  op: store result: 85
+#    Time: 2950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd2 result: 85
+#    Time: 3010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: a8  B: a1  op: rsvd1 result: 85
+#    Time: 3070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 9f  B: 2a  op: rsvd5 result: 85
+#    Time: 3130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 38  B: c8  op: rsvd4 result: 85
+#    Time: 3190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd1 result: 85
+#    Time: 3250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ba  B: 0  op: sp_func3 result: 2fd
+#    Time: 3310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: b4  B: ff  op: store result: 22e
+#    Time: 3370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: f2  B: bd  op: sp_func2 result: 168
+#    Time: 3430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: a9  op: mul_op result: b2aa
+#    Time: 3490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: fb  B: ff  op: add_op result: a9
+#    Time: 3550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 36  B: 8f  op: no_op1 result: 0
+#    Time: 3610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 9b  op: rsvd2 result: 0
+#    Time: 3670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Info: passed: A: 0  B: 4b  op: and_op result: 0
+#    Time: 3730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: d  B: 0  op: and_op result: 0
+#    Time: 3790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 86  B: 3b  op: load result: x
+#    Time: 3850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 5b  op: load result: x
+#    Time: 3910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ff  op: and_op result: 5b
+#    Time: 3970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: b8  B: e5  op: load result: x
+#    Time: 4030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: c8  op: add_op result: 19d
+#    Time: 4090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 1f  B: 0  op: sp_func3 result: 2fd
+#    Time: 4150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 14  B: 96  op: load result: x
+#    Time: 4210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ed  B: ff  op: add_op result: aa
+#    Time: 4270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 27  B: 0  op: sp_func1 result: 2eb
+#    Time: 4330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 49  op: sp_func3 result: 75
+#    Time: 4390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 51  B: 2a  op: rsvd2 result: 2fd
+#    Time: 4450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 83  B: 0  op: rsvd1 result: 2fd
+#    Time: 4510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 68  B: ff  op: and_op result: 0
+#    Time: 4570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: sp_func2 result: d0
+#    Time: 4630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: c5  op: no_op result: 0
+#    Time: 4690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: b0  op: no_op result: 0
+#    Time: 4730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 62  B: e1  op: rsvd3 result: 0
+#    Time: 4770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 86  op: sp_func3 result: 126
+#    Time: 4830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8d  B: 7  op: sp_func1 result: 20b
+#    Time: 4890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 3b  op: rsvd3 result: 9b
+#    Time: 4950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 5c  op: sp_func2 result: 0
+#    Time: 5010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: sp_func1 result: 1b7
+#    Time: 5070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: d  op: and_op result: 0
+#    Time: 5130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 9e  B: 7b  op: rsvd2 result: 0
+#    Time: 5190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: no_op1 result: 0
+#    Time: 5250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 44  B: e0  op: rsvd4 result: 0
+#    Time: 5310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: f8  B: 52  op: rsvd4 result: 0
+#    Time: 5370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 8c  B: 0  op: mul_op result: 4f70
+#    Time: 5430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 84  B: 7c  op: sp_func3 result: 1a4
+#    Time: 5490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8b  B: 25  op: no_op result: 0
+#    Time: 5550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 49  B: 0  op: and_op result: 1
+#    Time: 5590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd4 result: 0
+#    Time: 5650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 39  B: 0  op: sp_func3 result: 2fd
+#    Time: 5710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: no_op result: 0
+#    Time: 5770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 11  B: 0  op: sp_func3 result: 0
+#    Time: 5810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd2 result: 33
+#    Time: 5870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 39  op: xor_op result: ff
+#    Time: 5930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: no_op1 result: 0
+#    Time: 5990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 49  op: rsvd4 result: 0
+#    Time: 6050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: store result: 0
+#    Time: 6110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: c8  op: xor_op result: 0
+#    Time: 6170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 84  B: ff  op: rsvd4 result: 37
+#    Time: 6230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 52  B: d0  op: store result: 37
+#    Time: 6290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd5 result: 37
+#    Time: 6350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: sp_func2 result: 1fe
+#    Time: 6410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: c  B: c5  op: no_op1 result: 0
+#    Time: 6470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 69  op: no_op1 result: 0
+#    Time: 6530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d8  B: ff  op: sp_func3 result: 0
+#    Time: 6590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: mul_op result: d728
+#    Time: 6650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: sp_func2 result: 0
+#    Time: 6710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: ff  op: sp_func1 result: 1fe
+#    Time: 6770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 8b  B: db  op: sp_func2 result: 0
+#    Time: 6830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: c5  B: 0  op: no_op result: 0
+#    Time: 6890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: af  B: f8  op: no_op1 result: 0
+#    Time: 6930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 95  op: sp_func2 result: 15e
+#    Time: 6990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 28  op: rsvd5 result: 1fe
+#    Time: 7050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: e1  B: ff  op: mul_op result: 0
+#    Time: 7110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: d5  B: 0  op: rsvd5 result: e01f
+#    Time: 7170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: f  B: 7d  op: no_op result: 0
+#    Time: 7230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 3c  B: ef  op: rsvd5 result: 0
+#    Time: 7270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: b9  op: rsvd2 result: 0
+#    Time: 7330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 51  op: xor_op result: 46
+#    Time: 7390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 3a  B: 62  op: sp_func3 result: 2fd
+#    Time: 7450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 7d  B: e5  op: mul_op result: 1634
+#    Time: 7510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 41  B: ff  op: rsvd4 result: 6fd1
+#    Time: 7570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 70  B: a2  op: rsvd2 result: 6fd1
+#    Time: 7630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: dc  B: 0  op: rsvd4 result: 6fd1
+#    Time: 7690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 78  B: 5c  op: rsvd2 result: 6fd1
+#    Time: 7750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: c8  B: ff  op: xor_op result: 24
+#    Time: 7810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd5 result: 37
+#    Time: 7870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: b9  op: rsvd5 result: 37
+#    Time: 7930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: c  op: xor_op result: b9
+#    Time: 7990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 15  B: 4e  op: store result: c
+#    Time: 8050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 0  op: and_op result: 4
+#    Time: 8110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd4 result: 0
+#    Time: 8170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 4c  B: ff  op: no_op result: 0
+#    Time: 8230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: d  B: 0  op: no_op result: 0
+#    Time: 8270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: bc  B: 0  op: rsvd4 result: 0
+#    Time: 8310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 4d  op: no_op result: 0
+#    Time: 8370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 5d  B: 0  op: sp_func1 result: 9a
+#    Time: 8410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd1 result: 5d
+#    Time: 8470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 46  B: ff  op: rsvd5 result: 5d
+#    Time: 8530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: b7  B: 63  op: xor_op result: b9
+#    Time: 8590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 68  B: 90  op: store result: d4
+#    Time: 8650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ab  op: rsvd1 result: d4
+#    Time: 8710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: no_op result: 0
+#    Time: 8770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8b  B: 0  op: sp_func1 result: ff
+#    Time: 8810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: a5  op: rsvd3 result: 8b
+#    Time: 8870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd5 result: 8b
+#    Time: 8930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 9a  op: mul_op result: 0
+#    Time: 8990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: aa  B: c3  op: load result: x
+#    Time: 9050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: c3  op: and_op result: 82
+#    Time: 9110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 89  op: rsvd2 result: 0
+#    Time: 9170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 68  op: no_op1 result: 0
+#    Time: 9230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ff  op: sp_func1 result: 1cf
+#    Time: 9290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 82  op: rsvd2 result: 2fd
+#    Time: 9350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 32  op: mul_op result: 0
+#    Time: 9410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: aa  op: store result: 31ce
+#    Time: 9470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 8c  B: fb  op: no_op result: 0
+#    Time: 9530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: rsvd3 result: 0
+#    Time: 9570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 89  op: add_op result: ff
+#    Time: 9630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 9690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 82  B: 71  op: xor_op result: ff
+#    Time: 9750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: f1  B: 5  op: sp_func3 result: 186
+#    Time: 9810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: 2d3
+#    Time: 9870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 37  B: ff  op: rsvd1 result: 2d3
+#    Time: 9930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 3e  B: 0  op: rsvd5 result: 2d3
+#    Time: 9990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 12  op: mul_op result: 0
+#    Time: 10050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: fe  B: f3  op: load result: x
+#    Time: 10110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd2 result: x
+#    Time: 10170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: a6  op: no_op1 result: 0
+#    Time: 10230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ff  op: mul_op result: 0
+#    Time: 10290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: e1  op: mul_op result: fe01
+#    Time: 10350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: c9  B: 0  op: sp_func1 result: 1c2
+#    Time: 10410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: sp_func2 result: 192
+#    Time: 10470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: dc  op: load result: x
+#    Time: 10530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 0  op: no_op result: 0
+#    Time: 10590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 53  op: xor_op result: 0
+#    Time: 10630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: load result: x
+#    Time: 10690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 70  B: ff  op: rsvd1 result: x
+#    Time: 10750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: c  B: 15  op: add_op result: 16f
+#    Time: 10810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: no_op result: 0
+#    Time: 10870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: no_op result: 0
+#    Time: 10910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: rsvd4 result: 0
+#    Time: 10950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: sp_func3 result: 0
+#    Time: 11010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: c9  op: rsvd2 result: 2fd
+#    Time: 11070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ce  B: ff  op: sp_func3 result: 0
+#    Time: 11130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: mul_op result: cd32
+#    Time: 11190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 1a  B: 0  op: sp_func1 result: ff
+#    Time: 11250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: and_op result: 0
+#    Time: 11310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ea  op: xor_op result: 0
+#    Time: 11370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: sp_func2 result: 0
+#    Time: 11430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: ff  op: load result: x
+#    Time: 11490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 51  B: ff  op: load result: x
+#    Time: 11550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b0  B: ff  op: rsvd2 result: x
+#    Time: 11610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: no_op1 result: 0
+#    Time: 11670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 61  B: 55  op: rsvd4 result: 0
+#    Time: 11730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: d3  op: no_op1 result: 0
+#    Time: 11790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 58  B: c3  op: load result: x
+#    Time: 11850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: d6  op: mul_op result: 4308
+#    Time: 11910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 11970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 77  op: and_op result: 0
+#    Time: 12030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: f8  B: 6c  op: sp_func1 result: 1ed
+#    Time: 12090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 9c  B: 0  op: no_op result: 0
+#    Time: 12150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 69  B: de  op: no_op1 result: 0
+#    Time: 12190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 28  B: 9a  op: sp_func1 result: 225
+#    Time: 12250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: fb  B: ff  op: xor_op result: b2
+#    Time: 12310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 9e  op: and_op result: fb
+#    Time: 12370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: add_op result: 9e
+#    Time: 12430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 7e  op: add_op result: 1fe
+#    Time: 12490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 49  B: ff  op: mul_op result: 0
+#    Time: 12550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: mul_op result: 48b7
+#    Time: 12610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 77  B: e6  op: store result: fe01
+#    Time: 12670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: fc  op: no_op1 result: 0
+#    Time: 12730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: rsvd2 result: 0
+#    Time: 12790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: a0  op: and_op result: 0
+#    Time: 12850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd5 result: a0
+#    Time: 12910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: df  B: 0  op: and_op result: 0
+#    Time: 12970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: bd  op: no_op1 result: 0
+#    Time: 13030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd2 result: 0
+#    Time: 13090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: store result: 0
+#    Time: 13150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 2f  op: sp_func1 result: ff
+#    Time: 13210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: bc  B: a7  op: mul_op result: 2ed1
+#    Time: 13270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 69  op: add_op result: 163
+#    Time: 13330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: e8  op: rsvd1 result: 69
+#    Time: 13390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 37  B: f8  op: rsvd2 result: 69
+#    Time: 13450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 22  B: 0  op: no_op result: 0
+#    Time: 13510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 1e  B: eb  op: rsvd1 result: 0
+#    Time: 13550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 5e  B: 0  op: rsvd2 result: 0
+#    Time: 13610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 37  op: sp_func1 result: 5e
+#    Time: 13670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ce  B: d5  op: xor_op result: c8
+#    Time: 13730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd4 result: 1b
+#    Time: 13790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: e3  B: 0  op: rsvd3 result: 1b
+#    Time: 13850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 5c  B: ec  op: xor_op result: e3
+#    Time: 13910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 13970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: rsvd2 result: 0
+#    Time: 14030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: xor_op result: 0
+#    Time: 14090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 6a  B: 18  op: sp_func2 result: 0
+#    Time: 14150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 2e  B: 66  op: sp_func2 result: d4
+#    Time: 14210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8f  B: 7b  op: sp_func2 result: 5c
+#    Time: 14270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: c9  op: rsvd3 result: 11e
+#    Time: 14330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ad  B: ff  op: mul_op result: c837
+#    Time: 14390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd4 result: ac53
+#    Time: 14450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: add_op result: ff
+#    Time: 14510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ca  B: ff  op: store result: 0
+#    Time: 14570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 0  op: store result: 0
+#    Time: 14630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: ac  op: store result: 0
+#    Time: 14690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: d  op: store result: 0
+#    Time: 14750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 2f  op: add_op result: 10c
+#    Time: 14810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 5d  op: rsvd5 result: 12e
+#    Time: 14870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd3 result: 12e
+#    Time: 14930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: e9  B: 8d  op: rsvd2 result: 12e
+#    Time: 14990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: a0  B: ff  op: sp_func2 result: 1d2
+#    Time: 15050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: d1  op: no_op result: 0
+#    Time: 15110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 58  op: rsvd2 result: 0
+#    Time: 15150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 29  op: no_op1 result: 0
+#    Time: 15210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 4d  op: mul_op result: 28d7
+#    Time: 15270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: b9  op: xor_op result: b2
+#    Time: 15330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 81  B: 8f  op: no_op result: 0
+#    Time: 15390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: f  B: ff  op: rsvd5 result: 0
+#    Time: 15430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 9a  B: 0  op: store result: 0
+#    Time: 15490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: d8  op: store result: 0
+#    Time: 15550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 25  B: 56  op: load result: x
+#    Time: 15610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd3 result: x
+#    Time: 15670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: x
+#    Time: 15730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: d1  B: 0  op: no_op result: 0
+#    Time: 15790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: rsvd1 result: 0
+#    Time: 15830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 51  B: 45  op: rsvd3 result: 0
+#    Time: 15890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 80  B: 0  op: xor_op result: 14
+#    Time: 15950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 31  B: ff  op: load result: x
+#    Time: 16010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 0  op: xor_op result: ce
+#    Time: 16070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: f1  B: 9e  op: mul_op result: 0
+#    Time: 16130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: a  B: ff  op: load result: x
+#    Time: 16190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 25  B: 0  op: add_op result: 109
+#    Time: 16250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 2f  B: ff  op: load result: x
+#    Time: 16310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 0  op: sp_func3 result: 8d
+#    Time: 16370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 6f  op: and_op result: 0
+#    Time: 16430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 72  op: add_op result: 6f
+#    Time: 16490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: cb  op: and_op result: 72
+#    Time: 16550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: cb  B: 71  op: load result: x
+#    Time: 16610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b5  B: 0  op: rsvd5 result: x
+#    Time: 16670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: and_op result: 0
+#    Time: 16730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 5  B: b8  op: rsvd3 result: 0
+#    Time: 16790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 8d  B: f1  op: rsvd4 result: 0
+#    Time: 16850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 34  B: ff  op: mul_op result: 84bd
+#    Time: 16910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 5e  B: 0  op: rsvd4 result: 33cc
+#    Time: 16970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd5 result: 33cc
+#    Time: 17030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 9b  B: 6b  op: load result: x
+#    Time: 17090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: d9  op: rsvd2 result: x
+#    Time: 17150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: and_op result: d9
+#    Time: 17210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 5  op: rsvd4 result: 0
+#    Time: 17270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: store result: 0
+#    Time: 17330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 57  op: no_op result: 0
+#    Time: 17390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 0  op: sp_func2 result: 1fe
+#    Time: 17430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 66  op: rsvd4 result: 1fe
+#    Time: 17490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd5 result: 1fe
+#    Time: 17550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 50  op: mul_op result: 0
+#    Time: 17610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 6a  B: 0  op: rsvd4 result: 0
+#    Time: 17670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: no_op1 result: 0
+#    Time: 17730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 1e  op: store result: 0
+#    Time: 17790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: d6  B: a9  op: load result: x
+#    Time: 17850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 40  B: f5  op: no_op1 result: 0
+#    Time: 17910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 25  B: ff  op: rsvd1 result: 0
+#    Time: 17970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 9f  B: 0  op: mul_op result: 24db
+#    Time: 18030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 85  B: ff  op: store result: 0
+#    Time: 18090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 34  B: 51  op: load result: x
+#    Time: 18150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: b4  op: rsvd2 result: x
+#    Time: 18210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ec  op: rsvd5 result: x
+#    Time: 18270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: c0  B: ff  op: rsvd5 result: x
+#    Time: 18330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 84  op: mul_op result: bf40
+#    Time: 18390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: store result: 837c
+#    Time: 18450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 5d  op: rsvd3 result: 837c
+#    Time: 18510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd5 result: 837c
+#    Time: 18570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 5d  B: 76  op: load result: x
+#    Time: 18630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd2 result: x
+#    Time: 18690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: cd  op: no_op result: 0
+#    Time: 18750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: a9  B: dd  op: and_op result: 0
+#    Time: 18790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: no_op result: 0
+#    Time: 18850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: b3  B: ff  op: add_op result: 1fe
+#    Time: 18890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: fc  B: ff  op: load result: x
+#    Time: 18950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 75  B: d  op: no_op result: 0
+#    Time: 19010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: sp_func3 result: 15f
+#    Time: 19050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 68  op: no_op1 result: 0
+#    Time: 19110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: a6  op: rsvd1 result: 0
+#    Time: 19170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: b1  op: xor_op result: 59
+#    Time: 19230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: f6  B: 0  op: mul_op result: b04f
+#    Time: 19290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 3e  op: mul_op result: 0
+#    Time: 19350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 3d  B: 0  op: sp_func3 result: 2fd
+#    Time: 19410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd1 result: b7
+#    Time: 19470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: no_op result: 0
+#    Time: 19530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: d7  op: store result: 0
+#    Time: 19570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 4a  B: 41  op: xor_op result: 28
+#    Time: 19630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 71  B: 0  op: load result: x
+#    Time: 19690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: fe  op: xor_op result: 71
+#    Time: 19750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: d3  op: no_op1 result: 0
+#    Time: 19810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: f9  B: 0  op: load result: x
+#    Time: 19870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: f9
+#    Time: 19930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 67  B: 0  op: no_op result: 0
+#    Time: 19990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: cf  B: f2  op: no_op result: 0
+#    Time: 20030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: mul_op result: c3ae
+#    Time: 20070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: cb  op: rsvd5 result: 0
+#    Time: 20130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: no_op1 result: 0
+#    Time: 20190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 21  op: add_op result: 0
+#    Time: 20250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: sp_func1 result: 42
+#    Time: 20310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 20  op: rsvd5 result: 2fd
+#    Time: 20370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 2d  B: 7  op: and_op result: 0
+#    Time: 20430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: load result: x
+#    Time: 20490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ff  op: sp_func3 result: 0
+#    Time: 20550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 71  op: and_op result: ff
+#    Time: 20610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: f2  op: mul_op result: 708f
+#    Time: 20670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: 0
+#    Time: 20730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: and_op result: 0
+#    Time: 20790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 81  B: cb  op: no_op1 result: 0
+#    Time: 20850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: f5  B: 46  op: sp_func2 result: 102
+#    Time: 20910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 93  B: 0  op: rsvd2 result: 1ea
+#    Time: 20970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 72  B: b5  op: mul_op result: 0
+#    Time: 21030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: xor_op result: c7
+#    Time: 21090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 57  B: b4  op: add_op result: ff
+#    Time: 21150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 72  op: no_op result: 0
+#    Time: 21210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: cd  B: d7  op: rsvd5 result: 0
+#    Time: 21250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 96  B: 87  op: rsvd2 result: 0
+#    Time: 21310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 22  op: rsvd4 result: 0
+#    Time: 21370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: b0  op: xor_op result: 22
+#    Time: 21430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: store result: 4f
+#    Time: 21490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 9d  B: 0  op: rsvd1 result: 4f
+#    Time: 21550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: c  B: 0  op: no_op1 result: 0
+#    Time: 21610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 4f  B: 0  op: rsvd3 result: 0
+#    Time: 21670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: bd  op: xor_op result: 4f
+#    Time: 21730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: load result: x
+#    Time: 21790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b  B: 8f  op: rsvd4 result: x
+#    Time: 21850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 7b  B: c5  op: no_op1 result: 0
+#    Time: 21910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ca  B: ff  op: no_op1 result: 0
+#    Time: 21970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 1a  B: ff  op: rsvd4 result: 0
+#    Time: 22030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 13  B: 1d  op: and_op result: 1a
+#    Time: 22090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8e  B: f7  op: sp_func2 result: 26
+#    Time: 22150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: fe  B: a7  op: rsvd5 result: 11c
+#    Time: 22210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 59  B: 8d  op: mul_op result: a5b2
+#    Time: 22270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: sp_func1 result: 173
+#    Time: 22330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd3 result: 2fd
+#    Time: 22390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: load result: x
+#    Time: 22450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 22510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 22570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 72  B: 0  op: rsvd5 result: 0
+#    Time: 22630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: mul_op result: 0
+#    Time: 22690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 0  op: xor_op result: ff
+#    Time: 22750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: e4  B: ae  op: mul_op result: 0
+#    Time: 22810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: d  op: store result: 9af8
+#    Time: 22870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 0  op: sp_func2 result: 0
+#    Time: 22930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 37  B: ff  op: add_op result: 0
+#    Time: 22990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 5e  B: 1b  op: sp_func3 result: a5
+#    Time: 23050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 5b  B: 0  op: sp_func1 result: 94
+#    Time: 23110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 7c  B: f1  op: no_op result: 0
+#    Time: 23170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 6f  op: store result: 0
+#    Time: 23210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: and_op result: 6f
+#    Time: 23270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: ff
+#    Time: 23330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 67  B: d8  op: rsvd5 result: 1fe
+#    Time: 23390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ab  B: 0  op: no_op1 result: 0
+#    Time: 23450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: b1  op: sp_func2 result: 156
+#    Time: 23510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: sp_func3 result: 0
+#    Time: 23570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 3b  B: 62  op: and_op result: 0
+#    Time: 23630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: mul_op result: 1696
+#    Time: 23690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: a0  B: 37  op: no_op1 result: 0
+#    Time: 23750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: df  B: 83  op: store result: 0
+#    Time: 23810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ff  op: sp_func2 result: 1be
+#    Time: 23870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 3b  op: no_op result: 0
+#    Time: 23930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 8d  op: rsvd5 result: 0
+#    Time: 23970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 4b  B: 0  op: mul_op result: 0
+#    Time: 24030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 4c  B: ff  op: no_op1 result: 0
+#    Time: 24090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ac  B: b7  op: no_op1 result: 0
+#    Time: 24150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: d3  B: 0  op: store result: 0
+#    Time: 24210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 75  B: 2a  op: xor_op result: d3
+#    Time: 24270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: and_op result: 20
+#    Time: 24330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: f3  op: sp_func1 result: 1fe
+#    Time: 24390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd1 result: 2e5
+#    Time: 24450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 80  B: eb  op: and_op result: 0
+#    Time: 24510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd5 result: 80
+#    Time: 24570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd4 result: 80
+#    Time: 24630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: load result: x
+#    Time: 24690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: dc  B: 22  op: sp_func3 result: 2fd
+#    Time: 24750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: and_op result: 0
+#    Time: 24810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 96  op: rsvd5 result: 0
+#    Time: 24870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: add_op result: 195
+#    Time: 24930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 2  B: a1  op: add_op result: 0
+#    Time: 24990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: e4  B: 44  op: load result: x
+#    Time: 25050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: dc  op: rsvd3 result: x
+#    Time: 25110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 60  B: ff  op: no_op1 result: 0
+#    Time: 25170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ce  B: 2c  op: sp_func3 result: 120
+#    Time: 25230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 2a  B: 4b  op: rsvd3 result: 26a
+#    Time: 25290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 9  B: ff  op: rsvd5 result: 26a
+#    Time: 25350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: xor_op result: f6
+#    Time: 25410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: a  B: e2  op: rsvd5 result: ff
+#    Time: 25470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 2d  op: sp_func1 result: 1ce
+#    Time: 25530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: store result: 5a
+#    Time: 25590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 0  op: mul_op result: fe01
+#    Time: 25650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: sp_func3 result: 2fd
+#    Time: 25710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd3 result: 2fd
+#    Time: 25770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 51  B: 54  op: add_op result: ff
+#    Time: 25830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: f3  B: 0  op: rsvd3 result: a5
+#    Time: 25890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd3 result: a5
+#    Time: 25950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 49  B: ae  op: xor_op result: ff
+#    Time: 26010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 7  op: sp_func1 result: 1a5
+#    Time: 26070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd2 result: 10d
+#    Time: 26130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 8f  B: ff  op: rsvd5 result: 10d
+#    Time: 26190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: sp_func3 result: 1ad
+#    Time: 26250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: c9  B: 8a  op: add_op result: ff
+#    Time: 26310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 8f  B: 0  op: rsvd1 result: 153
+#    Time: 26370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: c9  op: rsvd4 result: 153
+#    Time: 26430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: c7  op: and_op result: c9
+#    Time: 26490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: b6  B: 0  op: load result: x
+#    Time: 26550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: a4  B: 0  op: and_op result: 0
+#    Time: 26610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: c1  op: rsvd2 result: 0
+#    Time: 26670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 8f  B: ff  op: sp_func2 result: 1fe
+#    Time: 26730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 0  op: store result: 11e
+#    Time: 26790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 85  B: ff  op: no_op result: 0
+#    Time: 26850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: no_op1 result: 0
+#    Time: 26890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: sp_func2 result: 0
+#    Time: 26950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd2 result: 1fe
+#    Time: 27010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 89  op: add_op result: ff
+#    Time: 27070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b  B: 1c  op: rsvd3 result: 89
+#    Time: 27130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: d5  B: 0  op: no_op result: 0
+#    Time: 27190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ec  B: 0  op: sp_func2 result: 1aa
+#    Time: 27230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd5 result: 1d8
+#    Time: 27290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 16  B: ff  op: store result: 1d8
+#    Time: 27350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 0  op: add_op result: 115
+#    Time: 27410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: add_op result: 0
+#    Time: 27470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: b3  op: and_op result: 0
+#    Time: 27530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 41  op: no_op result: 0
+#    Time: 27590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: d3  op: rsvd4 result: 0
+#    Time: 27630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: no_op1 result: 0
+#    Time: 27690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd2 result: 0
+#    Time: 27750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: and_op result: 0
+#    Time: 27810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 0  op: sp_func3 result: 0
+#    Time: 27870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: no_op result: 0
+#    Time: 27930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 34  op: rsvd3 result: 0
+#    Time: 27970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: sp_func2 result: 1fe
+#    Time: 28030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd2 result: 0
+#    Time: 28090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: mul_op result: fe01
+#    Time: 28150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: eb  op: rsvd3 result: 0
+#    Time: 28210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 76  B: 0  op: load result: x
+#    Time: 28270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 0  op: load result: x
+#    Time: 28330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 3f  B: ff  op: rsvd2 result: x
+#    Time: 28390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 65  op: store result: x
+#    Time: 28450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: b2  B: 0  op: store result: x
+#    Time: 28510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 4e  op: rsvd5 result: x
+#    Time: 28570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 86  B: 52  op: add_op result: 4e
+#    Time: 28630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 20  op: and_op result: 2
+#    Time: 28690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8e  B: 0  op: mul_op result: 1fe0
+#    Time: 28750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: and_op result: 0
+#    Time: 28810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 0  op: sp_func3 result: 2fd
+#    Time: 28870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 0  op: xor_op result: ff
+#    Time: 28930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 7b  B: 7d  op: and_op result: 0
+#    Time: 28990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 2b  B: c4  op: no_op result: 0
+#    Time: 29050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: da  op: rsvd3 result: 0
+#    Time: 29090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: store result: 0
+#    Time: 29150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: e1  B: 69  op: mul_op result: 0
+#    Time: 29210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 20  op: rsvd1 result: 5c49
+#    Time: 29270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: xor_op result: 20
+#    Time: 29330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: da  B: 81  op: no_op result: 0
+#    Time: 29390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: aa  B: 3b  op: no_op1 result: 0
+#    Time: 29430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ed  op: sp_func3 result: 1fe
+#    Time: 29490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 76  B: 3f  op: rsvd4 result: 2fd
+#    Time: 29550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 47  B: b3  op: rsvd5 result: 2fd
+#    Time: 29610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: and_op result: 3
+#    Time: 29670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 30  B: ff  op: sp_func3 result: 2fd
+#    Time: 29730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: no_op result: 0
+#    Time: 29790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ab  B: 0  op: no_op1 result: 0
+#    Time: 29830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: aa  op: rsvd5 result: 0
+#    Time: 29890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 60  op: sp_func1 result: 253
+#    Time: 29950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 42  B: 41  op: no_op result: 0
+#    Time: 30010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: a4  B: 0  op: sp_func2 result: 84
+#    Time: 30050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: a3  B: fd  op: no_op result: 0
+#    Time: 30110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 59  B: ff  op: store result: 0
+#    Time: 30150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 2c  B: dd  op: sp_func3 result: 10b
+#    Time: 30210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 38  B: 0  op: no_op result: 0
+#    Time: 30270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 7d  op: store result: 0
+#    Time: 30310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d  B: a3  op: store result: 0
+#    Time: 30370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: e2  B: 0  op: no_op result: 0
+#    Time: 30430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: b  B: 0  op: and_op result: 0
+#    Time: 30470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 45  op: sp_func1 result: b
+#    Time: 30530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 88  B: 0  op: add_op result: 45
+#    Time: 30590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 68  B: d2  op: load result: x
+#    Time: 30650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 8  B: 5a  op: rsvd3 result: x
+#    Time: 30710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: a4  B: 50  op: rsvd5 result: x
+#    Time: 30770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: no_op result: 0
+#    Time: 30830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 1c  B: 47  op: xor_op result: 0
+#    Time: 30870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8a  B: 0  op: sp_func3 result: 54
+#    Time: 30930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d2  B: ff  op: sp_func2 result: 114
+#    Time: 30990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 2c  B: 0  op: rsvd3 result: 1a4
+#    Time: 31050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd4 result: 1a4
+#    Time: 31110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: sp_func3 result: 0
+#    Time: 31170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 27  B: 6c  op: load result: x
+#    Time: 31230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: af  B: d3  op: and_op result: 24
+#    Time: 31290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 39  B: 0  op: sp_func2 result: 15e
+#    Time: 31350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: f1  B: f8  op: sp_func2 result: 72
+#    Time: 31410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d5  B: 96  op: sp_func2 result: 1e2
+#    Time: 31470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: store result: 1aa
+#    Time: 31530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 54  B: 0  op: xor_op result: 0
+#    Time: 31590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 9f  B: ff  op: mul_op result: 0
+#    Time: 31650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: mul_op result: 9e61
+#    Time: 31710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 1c  B: ac  op: rsvd1 result: fe01
+#    Time: 31770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 90  B: 0  op: sp_func1 result: 174
+#    Time: 31830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 94  op: and_op result: 0
+#    Time: 31890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: e8  B: 0  op: load result: x
+#    Time: 31950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 32  B: 0  op: rsvd3 result: x
+#    Time: 32010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: b  op: rsvd3 result: x
+#    Time: 32070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: xor_op result: b
+#    Time: 32130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: sp_func3 result: 0
+#    Time: 32190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: no_op1 result: 0
+#    Time: 32250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 41  B: 3c  op: sp_func2 result: 0
+#    Time: 32310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 15  B: ff  op: store result: 82
+#    Time: 32370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: da  B: 0  op: xor_op result: ea
+#    Time: 32430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: b5  op: and_op result: 0
+#    Time: 32490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: add_op result: 1b4
+#    Time: 32550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: a8  B: 0  op: no_op1 result: 0
+#    Time: 32610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: d3  op: and_op result: 0
+#    Time: 32670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 0  op: mul_op result: 0
+#    Time: 32730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 79  op: store result: 0
+#    Time: 32790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: d5  B: 0  op: rsvd1 result: 0
+#    Time: 32850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 72  op: rsvd2 result: 0
+#    Time: 32910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 7  op: rsvd1 result: 0
+#    Time: 32970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: da  B: c5  op: no_op result: 0
+#    Time: 33030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: 264
+#    Time: 33070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 6c  op: sp_func2 result: 0
+#    Time: 33130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: c1  B: 0  op: rsvd4 result: 0
+#    Time: 33190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 90  B: 16  op: sp_func3 result: 243
+#    Time: 33250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: f8  B: af  op: rsvd2 result: 1b0
+#    Time: 33310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ce  B: e0  op: no_op1 result: 0
+#    Time: 33370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 6f  B: 33  op: rsvd4 result: 0
+#    Time: 33430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: sp_func2 result: de
+#    Time: 33490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: c6  B: a5  op: rsvd5 result: 1fe
+#    Time: 33550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: d6  B: 0  op: mul_op result: 7f9e
+#    Time: 33610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: xor_op result: d6
+#    Time: 33670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 85  op: no_op1 result: 0
+#    Time: 33730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 4  op: load result: x
+#    Time: 33790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ff  op: and_op result: 0
+#    Time: 33850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd3 result: ff
+#    Time: 33910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: no_op1 result: 0
+#    Time: 33970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 1c  B: b4  op: xor_op result: 0
+#    Time: 34030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 53  op: rsvd1 result: a8
+#    Time: 34090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 4a  B: ff  op: rsvd3 result: a8
+#    Time: 34150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 89  B: 65  op: add_op result: 149
+#    Time: 34210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 9b  op: sp_func1 result: 153
+#    Time: 34270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 49  B: 5d  op: add_op result: 19a
+#    Time: 34330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8c  B: 64  op: mul_op result: 1a85
+#    Time: 34390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 50  B: ff  op: no_op result: 0
+#    Time: 34450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 3b  op: rsvd2 result: 0
+#    Time: 34490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 75  B: ff  op: rsvd2 result: 0
+#    Time: 34550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: f6  B: 19  op: mul_op result: 748b
+#    Time: 34610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: e0  op: rsvd4 result: 1806
+#    Time: 34670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: f3  op: load result: x
+#    Time: 34730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 0  op: no_op1 result: 0
+#    Time: 34790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 9a  B: b9  op: rsvd3 result: 0
+#    Time: 34850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: rsvd4 result: 0
+#    Time: 34910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: e0  B: 0  op: store result: 0
+#    Time: 34970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 5f  B: a4  op: store result: 0
+#    Time: 35030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d8  B: e6  op: no_op1 result: 0
+#    Time: 35090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ed  B: 30  op: rsvd5 result: 0
+#    Time: 35150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 2a  op: rsvd2 result: 0
+#    Time: 35210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 43  B: 0  op: rsvd4 result: 0
+#    Time: 35270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: no_op result: 0
+#    Time: 35330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: c1  B: 28  op: rsvd5 result: 0
+#    Time: 35370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 38  op: store result: 0
+#    Time: 35430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: bf  op: xor_op result: 38
+#    Time: 35490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 2b  B: ff  op: store result: bf
+#    Time: 35550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: bb  op: sp_func2 result: 56
+#    Time: 35610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 27  B: 0  op: rsvd3 result: 1fe
+#    Time: 35670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: a9  B: 89  op: mul_op result: 0
+#    Time: 35730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 58  op: rsvd2 result: 5a71
+#    Time: 35790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 94  B: b2  op: no_op1 result: 0
+#    Time: 35850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: c9  op: rsvd2 result: 0
+#    Time: 35910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 5b  B: 6d  op: rsvd1 result: 0
+#    Time: 35970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 29  op: store result: 0
+#    Time: 36030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 9a  B: 0  op: xor_op result: d6
+#    Time: 36090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 48  op: sp_func1 result: 9a
+#    Time: 36150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 15  B: 56  op: sp_func3 result: 2fd
+#    Time: 36210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 19  B: 90  op: rsvd1 result: 3f
+#    Time: 36270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd1 result: 3f
+#    Time: 36330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: bf  B: ff  op: rsvd5 result: 3f
+#    Time: 36390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: f1  op: no_op result: 0
+#    Time: 36450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 22  B: ff  op: load result: x
+#    Time: 36490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: c3  B: ff  op: store result: x
+#    Time: 36550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b2  B: 8e  op: rsvd4 result: x
+#    Time: 36610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 47  B: ff  op: rsvd4 result: x
+#    Time: 36670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 47  op: and_op result: 47
+#    Time: 36730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 60  op: add_op result: 47
+#    Time: 36790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 43  op: and_op result: 0
+#    Time: 36850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 62  op: rsvd5 result: 0
+#    Time: 36910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 82  B: 19  op: no_op1 result: 0
+#    Time: 36970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 1e  B: ff  op: add_op result: 9b
+#    Time: 37030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: add_op result: 11d
+#    Time: 37090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: d7  op: and_op result: ff
+#    Time: 37150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: mul_op result: d629
+#    Time: 37210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: store result: 0
+#    Time: 37270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: e8  op: load result: x
+#    Time: 37330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: a8  op: sp_func2 result: 0
+#    Time: 37390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 93  op: sp_func3 result: 2fd
+#    Time: 37450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 87  op: rsvd5 result: 0
+#    Time: 37510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: b5  op: store result: 0
+#    Time: 37570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: e7  B: a  op: rsvd1 result: 0
+#    Time: 37630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 37690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: ff  op: sp_func3 result: 2fd
+#    Time: 37750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: cf  op: load result: x
+#    Time: 37810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: c3  B: 82  op: add_op result: cf
+#    Time: 37870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: 145
+#    Time: 37930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 6a  B: 0  op: mul_op result: 0
+#    Time: 37990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: 6a
+#    Time: 38050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 8e  op: xor_op result: ff
+#    Time: 38110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd1 result: 71
+#    Time: 38170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 21  B: b  op: rsvd5 result: 71
+#    Time: 38230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: 71
+#    Time: 38290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 3b  op: sp_func1 result: 0
+#    Time: 38350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 77  B: 39  op: sp_func1 result: 76
+#    Time: 38410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: fb  B: 40  op: load result: x
+#    Time: 38470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: ff  op: store result: x
+#    Time: 38530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: c  op: mul_op result: 0
+#    Time: 38590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: e8  B: ff  op: no_op result: 0
+#    Time: 38650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 13  op: no_op result: 0
+#    Time: 38690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ce  B: 52  op: load result: x
+#    Time: 38730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: db  B: 0  op: store result: x
+#    Time: 38790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 20  B: 22  op: no_op1 result: 0
+#    Time: 38850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 69  op: add_op result: 42
+#    Time: 38910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: c0  op: rsvd2 result: 168
+#    Time: 38970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b7  B: 8b  op: rsvd3 result: 168
+#    Time: 39030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 4f  op: sp_func3 result: 225
+#    Time: 39090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 15  B: ff  op: sp_func1 result: 9e
+#    Time: 39150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: d2  op: sp_func1 result: 213
+#    Time: 39210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: b6  op: mul_op result: d12e
+#    Time: 39270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: c8  B: ff  op: rsvd2 result: 0
+#    Time: 39330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: load result: x
+#    Time: 39390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 39  B: 0  op: rsvd3 result: x
+#    Time: 39450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 6a  op: rsvd3 result: x
+#    Time: 39510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 99  op: sp_func1 result: d4
+#    Time: 39570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: fb  op: and_op result: 0
+#    Time: 39630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 89  B: cc  op: load result: x
+#    Time: 39690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 0  op: store result: x
+#    Time: 39750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 34  B: 52  op: no_op1 result: 0
+#    Time: 39810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 9a  B: 0  op: sp_func1 result: d8
+#    Time: 39870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd5 result: 9a
+#    Time: 39930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: 2fd
+#    Time: 39990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: d  op: rsvd2 result: 1fe
+#    Time: 40050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 68  op: mul_op result: cf3
+#    Time: 40110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: c2  B: 0  op: no_op1 result: 0
+#    Time: 40170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: rsvd4 result: 0
+#    Time: 40230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 5  op: sp_func2 result: 1fe
+#    Time: 40290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: sp_func2 result: 0
+#    Time: 40350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 2  B: 0  op: sp_func3 result: 0
+#    Time: 40410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: fb  B: a2  op: no_op1 result: 0
+#    Time: 40470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 7a  B: ff  op: xor_op result: 59
+#    Time: 40530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: df  B: e3  op: xor_op result: 85
+#    Time: 40590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 49  op: rsvd4 result: 3c
+#    Time: 40650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 82  B: 88  op: sp_func2 result: 1fe
+#    Time: 40710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 4b  op: rsvd1 result: 104
+#    Time: 40770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: e8  B: ff  op: add_op result: 14a
+#    Time: 40830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: cb  B: 0  op: no_op result: 0
+#    Time: 40890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: d6  B: 0  op: and_op result: 0
+#    Time: 40930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: d5  B: c9  op: add_op result: d6
+#    Time: 40990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 89  B: ff  op: rsvd5 result: 19e
+#    Time: 41050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: sp_func2 result: 112
+#    Time: 41110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 96  B: 70  op: store result: 0
+#    Time: 41170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: d8  op: xor_op result: e6
+#    Time: 41230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 3b  op: rsvd4 result: d8
+#    Time: 41290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: sp_func3 result: 2fd
+#    Time: 41350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd1 result: 2fd
+#    Time: 41410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 4b  op: no_op1 result: 0
+#    Time: 41470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: e0  B: ff  op: sp_func2 result: 1fe
+#    Time: 41530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 19  B: ff  op: no_op1 result: 0
+#    Time: 41590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: rsvd1 result: 0
+#    Time: 41650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Info: passed: A: ff  B: 96  op: load result: x
+#    Time: 41710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: f6  op: rsvd1 result: x
+#    Time: 41770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 71  op: rsvd5 result: x
+#    Time: 41830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 34  B: 34  op: rsvd2 result: x
+#    Time: 41890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 91  B: 86  op: xor_op result: 0
+#    Time: 41950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd1 result: 17
+#    Time: 42010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 95  op: xor_op result: 0
+#    Time: 42070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: and_op result: 0
+#    Time: 42130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: c4  B: a9  op: mul_op result: 0
+#    Time: 42190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 3  op: load result: x
+#    Time: 42250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 38  B: ee  op: rsvd3 result: x
+#    Time: 42310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: e7  op: rsvd5 result: x
+#    Time: 42370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 6f  B: 10  op: sp_func3 result: 2fd
+#    Time: 42430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 0  op: and_op result: 0
+#    Time: 42490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 38  B: dc  op: xor_op result: ff
+#    Time: 42550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 3d  B: fd  op: no_op result: 0
+#    Time: 42610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: c  op: rsvd3 result: 0
+#    Time: 42650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: d3  op: sp_func3 result: 2fd
+#    Time: 42710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 3d  B: ac  op: no_op result: 0
+#    Time: 42770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: c7  op: no_op result: 0
+#    Time: 42810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 7e  B: 0  op: rsvd1 result: 0
+#    Time: 42850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 32  B: 0  op: rsvd2 result: 0
+#    Time: 42910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: bd  op: no_op1 result: 0
+#    Time: 42970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 1e  op: no_op result: 0
+#    Time: 43030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ee  B: 89  op: load result: x
+#    Time: 43070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 68  op: add_op result: 177
+#    Time: 43130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8c  B: e1  op: add_op result: 167
+#    Time: 43190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 5f  B: ff  op: sp_func1 result: 24e
+#    Time: 43250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: xor_op result: a0
+#    Time: 43310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd1 result: ff
+#    Time: 43370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 3c  B: 0  op: and_op result: ff
+#    Time: 43430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: a4  op: mul_op result: 0
+#    Time: 43490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 23  op: no_op result: 0
+#    Time: 43550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 31  B: ff  op: xor_op result: dc
+#    Time: 43590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: d  op: rsvd4 result: ce
+#    Time: 43650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 3b  op: xor_op result: f2
+#    Time: 43710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 5  op: mul_op result: 3ac5
+#    Time: 43770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: b2  B: ff  op: xor_op result: 5
+#    Time: 43830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: c2  B: b8  op: xor_op result: 4d
+#    Time: 43890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd2 result: 7a
+#    Time: 43950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd3 result: 7a
+#    Time: 44010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 77  B: ff  op: and_op result: 0
+#    Time: 44070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 34  op: sp_func2 result: ee
+#    Time: 44130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 91  op: sp_func2 result: 1fe
+#    Time: 44190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 87  op: add_op result: 91
+#    Time: 44250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 41  B: 0  op: rsvd5 result: 186
+#    Time: 44310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: 186
+#    Time: 44370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: store result: 186
+#    Time: 44430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 2d  B: ff  op: and_op result: 0
+#    Time: 44490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: bc  B: 16  op: mul_op result: 2cd3
+#    Time: 44550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: da  B: a5  op: rsvd5 result: 1028
+#    Time: 44610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd2 result: 1028
+#    Time: 44670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: b3  op: store result: 1028
+#    Time: 44730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: a7  op: and_op result: 0
+#    Time: 44790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 0  op: no_op result: 0
+#    Time: 44850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 92  op: load result: x
+#    Time: 44890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: eb  B: 66  op: store result: x
+#    Time: 44950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: 4b  op: load result: x
+#    Time: 45010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 9c  B: 2e  op: rsvd1 result: x
+#    Time: 45070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 81  B: ff  op: add_op result: ca
+#    Time: 45130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d1  B: ff  op: add_op result: 180
+#    Time: 45190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd2 result: 1d0
+#    Time: 45250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ad  B: 0  op: store result: 1d0
+#    Time: 45310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 96  B: 31  op: rsvd2 result: 1d0
+#    Time: 45370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: store result: 1d0
+#    Time: 45430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 4b  B: 0  op: sp_func2 result: 0
+#    Time: 45490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 4f  op: xor_op result: 4b
+#    Time: 45550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: no_op1 result: 0
+#    Time: 45610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: d9  B: ff  op: sp_func1 result: ff
+#    Time: 45670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: mul_op result: d827
+#    Time: 45730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: cf  B: ff  op: and_op result: ff
+#    Time: 45790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: add_op result: 1ce
+#    Time: 45850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: ff  op: sp_func2 result: 1fe
+#    Time: 45910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: dd  B: f9  op: rsvd3 result: 1fe
+#    Time: 45970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: e7  B: 77  op: rsvd5 result: 1fe
+#    Time: 46030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: sp_func3 result: 2b5
+#    Time: 46090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: a2  B: 3b  op: rsvd4 result: 0
+#    Time: 46150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 27  B: 0  op: load result: x
+#    Time: 46210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: b0  B: 2f  op: add_op result: 27
+#    Time: 46270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 26  op: no_op result: 0
+#    Time: 46330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: sp_func1 result: 14b
+#    Time: 46370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 2a  op: sp_func2 result: 1fe
+#    Time: 46430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 3  B: 25  op: load result: x
+#    Time: 46490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd4 result: x
+#    Time: 46550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: 23  op: no_op result: 0
+#    Time: 46610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: cb  op: sp_func2 result: 0
+#    Time: 46650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ff  op: sp_func2 result: 0
+#    Time: 46710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd5 result: 1fe
+#    Time: 46770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ef  op: sp_func1 result: 1fe
+#    Time: 46830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 82  op: load result: x
+#    Time: 46890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: e3  B: 97  op: mul_op result: 0
+#    Time: 46950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 39  op: no_op1 result: 0
+#    Time: 47010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: ff  op: sp_func2 result: 0
+#    Time: 47070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: f6  op: load result: x
+#    Time: 47130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 7e  B: ff  op: no_op result: 0
+#    Time: 47190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: ff  op: sp_func3 result: 17a
+#    Time: 47230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 8f  B: ff  op: and_op result: ff
+#    Time: 47290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 5e  B: ff  op: rsvd2 result: 8f
+#    Time: 47350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: 43  op: store result: 8f
+#    Time: 47410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 27  op: rsvd5 result: 8f
+#    Time: 47470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 2c  B: 0  op: and_op result: 27
+#    Time: 47530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: d2  B: e3  op: rsvd4 result: 0
+#    Time: 47590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: f9  op: no_op1 result: 0
+#    Time: 47650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 2d  B: 0  op: add_op result: 1f8
+#    Time: 47710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: 2d
+#    Time: 47770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd1 result: 2d
+#    Time: 47830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 75  B: 3a  op: load result: x
+#    Time: 47890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 60  op: sp_func1 result: e9
+#    Time: 47950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 20  op: mul_op result: 5fa0
+#    Time: 48010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: c7  op: xor_op result: 20
+#    Time: 48070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: d1  op: load result: x
+#    Time: 48130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: de  B: 5a  op: rsvd1 result: x
+#    Time: 48190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: add_op result: 138
+#    Time: 48250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 91  op: xor_op result: 0
+#    Time: 48310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: sp_func1 result: 122
+#    Time: 48370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: d5  op: sp_func1 result: 2fd
+#    Time: 48430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 14  op: store result: 1aa
+#    Time: 48490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 2c  op: add_op result: 113
+#    Time: 48550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 20  op: and_op result: 2c
+#    Time: 48610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: d9  op: add_op result: 20
+#    Time: 48670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 1f  B: ff  op: xor_op result: 26
+#    Time: 48730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 44  B: fa  op: rsvd4 result: e0
+#    Time: 48790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd4 result: e0
+#    Time: 48850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 51  B: 10  op: sp_func2 result: 1fe
+#    Time: 48910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: d9  B: fa  op: rsvd2 result: a2
+#    Time: 48970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 6b  B: 7d  op: store result: a2
+#    Time: 49030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 9a  B: 8c  op: rsvd2 result: a2
+#    Time: 49090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 82  op: no_op1 result: 0
+#    Time: 49150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: cd  B: ff  op: mul_op result: 0
+#    Time: 49210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 36  B: ff  op: sp_func1 result: 2cb
+#    Time: 49270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: cb  B: 0  op: store result: 234
+#    Time: 49330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 5d  B: e2  op: rsvd3 result: 234
+#    Time: 49390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: fa  B: 5c  op: rsvd1 result: 234
+#    Time: 49450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: xor_op result: a6
+#    Time: 49510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: mul_op result: 0
+#    Time: 49570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 7b  B: 84  op: rsvd2 result: 0
+#    Time: 49630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd4 result: 0
+#    Time: 49690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: ff  B: af  op: load result: x
+#    Time: 49750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 0  B: 0  op: no_op result: 0
+#    Time: 49810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd2 result: 0
+#    Time: 49850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: dc  B: ff  op: rsvd3 result: 0
+#    Time: 49910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 9c  op: xor_op result: 23
+#    Time: 49970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 2b  B: ff  op: rsvd3 result: 63
+#    Time: 50030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: e1  B: ff  op: rsvd2 result: 63
+#    Time: 50090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: mul_op result: e01f
+#    Time: 50150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 55  op: load result: x
+#    Time: 50210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 6a  B: ff  op: sp_func2 result: 0
+#    Time: 50270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ed  B: ff  op: no_op result: 0
+#    Time: 50330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: b0  op: xor_op result: 12
+#    Time: 50370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 82  B: 0  op: rsvd3 result: b0
+#    Time: 50430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: add_op result: 82
+#    Time: 50490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 32  op: store result: ff
+#    Time: 50550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 0  B: 5e  op: sp_func1 result: 163
+#    Time: 50610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 6b  B: ff  op: no_op1 result: 0
+#    Time: 50670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: c2  op: and_op result: 6b
+#    Time: 50730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: add_op result: c2
+#    Time: 50790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 9e  B: 0  op: store result: ff
+#    Time: 50850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 5a  op: sp_func1 result: 9e
+#    Time: 50910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: a5  B: ba  op: no_op result: 0
+#    Time: 50970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 5d  op: sp_func1 result: 219
+#    Time: 51010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 5e  op: no_op result: 0
+#    Time: 51070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 6b  op: rsvd2 result: 0
+#    Time: 51110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 4d  op: and_op result: 6b
+#    Time: 51170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: store result: 4d
+#    Time: 51230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 89  B: 0  op: rsvd5 result: 4d
+#    Time: 51290 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 0  B: ca  op: load result: x
+#    Time: 51350 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd4 result: x
+#    Time: 51410 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 96  B: 19  op: sp_func2 result: 0
+#    Time: 51470 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ed  B: 0  op: sp_func1 result: c8
+#    Time: 51530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ab  B: 0  op: no_op1 result: 0
+#    Time: 51590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: c  op: sp_func2 result: 156
+#    Time: 51650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd2 result: 1fe
+#    Time: 51710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 1  op: rsvd3 result: 1fe
+#    Time: 51770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 1e  B: c5  op: sp_func3 result: 2fd
+#    Time: 51830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 70  op: no_op1 result: 0
+#    Time: 51890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 0  op: load result: x
+#    Time: 51950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: 7d  B: ff  op: store result: x
+#    Time: 52010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 94  B: ff  op: rsvd3 result: x
+#    Time: 52070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: d  B: 0  op: xor_op result: 6b
+#    Time: 52130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 9  B: 0  op: sp_func2 result: 1a
+#    Time: 52190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 59  op: rsvd4 result: 12
+#    Time: 52250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd5 result: 12
+#    Time: 52310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: a4  op: xor_op result: 0
+#    Time: 52370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 0  op: rsvd5 result: a4
+#    Time: 52430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: ff  op: rsvd2 result: a4
+#    Time: 52490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 11  B: 0  op: xor_op result: ff
+#    Time: 52550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 68  op: and_op result: 0
+#    Time: 52610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: c2  B: 9a  op: and_op result: 68
+#    Time: 52670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: bc  B: 27  op: no_op1 result: 0
+#    Time: 52730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: rsvd5 result: 0
+#    Time: 52790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: store result: 0
+#    Time: 52850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 68  B: 0  op: rsvd2 result: 0
+#    Time: 52910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: dc  B: 66  op: add_op result: 68
+#    Time: 52970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: ff  B: 9f  op: load result: x
+#    Time: 53030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: ff  B: ff  op: sp_func3 result: 2fd
+#    Time: 53090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: d7  B: 0  op: rsvd3 result: 2fd
+#    Time: 53150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: ff  B: d4  op: xor_op result: d7
+#    Time: 53210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 15  B: 0  op: no_op1 result: 0
+#    Time: 53270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: sp_func2 result: 2a
+#    Time: 53330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 0  B: 0  op: store result: 0
+#    Time: 53390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 8e  B: b3  op: rsvd4 result: 0
+#    Time: 53450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Info: passed: A: 38  B: d2  op: load result: x
+#    Time: 53510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: ff  B: 0  op: sp_func1 result: 1dc
+#    Time: 53570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: sp_func1 result: ff
+#    Time: 53630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 9f  B: c6  op: sp_func3 result: 0
+#    Time: 53690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: d9  B: c6  op: load result: x
+#    Time: 53750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 58  B: 0  op: mul_op result: a7d6
+#    Time: 53810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd4 result: 0
+#    Time: 53870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd1 result: 0
+#    Time: 53930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 54  op: sp_func3 result: 2fd
+#    Time: 53990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 6d  B: ff  op: and_op result: 0
+#    Time: 54050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 34  B: ff  op: sp_func1 result: 26b
+#    Time: 54110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: e7  op: sp_func2 result: 68
+#    Time: 54170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: de  B: c1  op: no_op result: 0
+#    Time: 54230 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 4  B: 16  op: sp_func3 result: 29a
+#    Time: 54270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: ff  op: sp_func3 result: c
+#    Time: 54330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: mul_op result: fe01
+#    Time: 54390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 39  B: ff  op: load result: x
+#    Time: 54450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Info: passed: A: e8  B: 4d  op: load result: x
+#    Time: 54510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 56  B: 0  op: sp_func3 result: 2b8
+#    Time: 54570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 2b  B: c5  op: load result: x
+#    Time: 54630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: 18  B: fa  op: sp_func1 result: 1b5
+#    Time: 54690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 4c  B: ff  op: and_op result: 18
+#    Time: 54750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 7d  B: ff  op: sp_func1 result: 24a
+#    Time: 54810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 63  B: 58  op: no_op result: 0
+#    Time: 54870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 15  B: ff  op: sp_func3 result: 129
+#    Time: 54910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: sp_func2 result: 2a
+#    Time: 54970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: c8  op: sp_func3 result: 0
+#    Time: 55030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 0  op: mul_op result: c738
+#    Time: 55090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 2d  B: af  op: and_op result: 0
+#    Time: 55150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: e6  B: 0  op: no_op result: 0
+#    Time: 55210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: d3  B: 10  op: rsvd3 result: 0
+#    Time: 55250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Info: passed: A: 20  B: 13  op: load result: x
+#    Time: 55310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ca  B: ed  op: rsvd2 result: x
+#    Time: 55370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 45  B: ff  op: sp_func1 result: 2a4
+#    Time: 55430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: aa  B: 54  op: no_op1 result: 0
+#    Time: 55490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: b7  B: 0  op: rsvd2 result: 0
+#    Time: 55550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 6d  B: 0  op: rsvd4 result: 0
+#    Time: 55610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 21  B: f2  op: sp_func3 result: 147
+#    Time: 55670 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ff  op: xor_op result: d3
+#    Time: 55730 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 4e  B: c6  op: no_op result: 0
+#    Time: 55790 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 8d  B: 59  op: rsvd3 result: 0
+#    Time: 55830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: a9  B: 2f  op: rsvd1 result: 0
+#    Time: 55890 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 44  op: store result: 0
+#    Time: 55950 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: ad  op: add_op result: 44
+#    Time: 56010 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 9a  op: no_op1 result: 0
+#    Time: 56070 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 61  op: rsvd4 result: 0
+#    Time: 56130 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: rsvd5 result: 0
+#    Time: 56190 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: c3  B: a2  op: rsvd3 result: 0
+#    Time: 56250 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 62  B: a3  op: store result: 0
+#    Time: 56310 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 3f  op: rsvd1 result: 0
+#    Time: 56370 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: sp_func3 result: 0
+#    Time: 56430 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 0  B: 3b  op: no_op result: 0
+#    Time: 56490 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 73  B: 0  op: rsvd3 result: 0
+#    Time: 56530 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 4f  B: 0  op: rsvd4 result: 0
+#    Time: 56590 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ec  B: b0  op: rsvd1 result: 0
+#    Time: 56650 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 4c  B: cc  op: sp_func3 result: 2c4
+#    Time: 56710 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 8f  B: 4d  op: store result: e4
+#    Time: 56770 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# ** Error: FAILED: A: a  B: 11  op: no_op result: 0
+#    Time: 56830 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 4b  B: ff  op: add_op result: 1b
+#    Time: 56870 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 53  B: 8  op: sp_func1 result: 249
+#    Time: 56930 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: b0  B: c6  op: rsvd1 result: 63
+#    Time: 56990 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: b  B: ff  op: add_op result: 176
+#    Time: 57050 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd2 result: 10a
+#    Time: 57110 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: de  B: b6  op: no_op result: 0
+#    Time: 57170 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: e1  B: ff  op: no_op1 result: 0
+#    Time: 57210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 94  op: rsvd5 result: 0
+#    Time: 57270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: ff  op: rsvd2 result: 0
+#    Time: 57330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 4d  B: 47  op: add_op result: 1fe
+#    Time: 57390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 0  op: xor_op result: a
+#    Time: 57450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Info: passed: A: 48  B: a9  op: store result: ff
+#    Time: 57510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: 0  B: 0  op: rsvd3 result: ff
+#    Time: 57570 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 67  B: ff  op: sp_func1 result: 0
+#    Time: 57630 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: c0  B: a4  op: rsvd5 result: 265
+#    Time: 57690 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: 22  op: rsvd3 result: 265
+#    Time: 57750 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 45  B: 0  op: no_op result: 0
+#    Time: 57810 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 0  op: rsvd5 result: 0
+#    Time: 57850 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: c4  B: ff  op: rsvd2 result: 0
+#    Time: 57910 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: rsvd5 result: 0
+#    Time: 57970 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 5b  B: 0  op: sp_func2 result: 1fe
+#    Time: 58030 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: ff  B: 43  op: and_op result: 0
+#    Time: 58090 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd5 result: 43
+#    Time: 58150 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Info: passed: A: ff  B: ff  op: rsvd1 result: 43
+#    Time: 58210 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 28
+# entered debug mode
+# ** Error: FAILED: A: 39  B: 87  op: sp_func1 result: 2fd
+#    Time: 58270 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: 6d  B: ff  op: no_op1 result: 0
+#    Time: 58330 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: ff  B: 0  op: rsvd2 result: 0
+#    Time: 58390 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# ** Error: FAILED: A: 0  B: ff  op: store result: 0
+#    Time: 58450 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Error: FAILED: A: f5  B: 0  op: no_op result: 0
+#    Time: 58510 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: 0  B: 44  op: rsvd3 result: 0
+#    Time: 58550 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# entered debug mode
+# entered debug mode
+# entered debug mode
+# ** Error: FAILED: A: af  B: 22  op: rsvd3 result: 0
+#    Time: 58610 ns  Scope: top.scoreboard_i File: N:/pre_si/asgt2/scoreboard.sv Line: 25
+# ** Note: $stop    : N:/pre_si/asgt2/tester.sv(56)
+#    Time: 58620 ns  Iteration: 1  Instance: /top/random_tester_i
+# Break at N:/pre_si/asgt2/tester.sv line 56
