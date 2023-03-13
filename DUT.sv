@@ -5,9 +5,9 @@
  
 
 module DUT(//bus_intf intf_inst,
-        input logic [7:0]A[3:0],
-		input logic [7:0]B[3:0], //operands
-		input logic [3:0]op[3:0], //opcodes for the operations
+        input [7:0]A[3:0],
+		input [7:0]B[3:0], //operands
+		input [3:0]op[3:0], //opcodes for the operations
 		input clk, // positive edge triggered clock 
 		input reset, //synchronous reset
 		input start[3:0],

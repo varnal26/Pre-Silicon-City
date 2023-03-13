@@ -21,6 +21,6 @@ import uvm_pkg::*;
 `include "sequence.sv"
 `include "env.sv"
 `include "test.sv"
-`include "scoreboard.sv"
+//`include "scoreboard.sv"
 
 endpackage
