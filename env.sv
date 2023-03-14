@@ -6,11 +6,12 @@ proc_agent agenth;
 proc2_agent agent2h;
 proc3_agent agent3h;
 proc4_agent agent4h;
+scoreboard sbd1;
 
 
 extern function new(string name = "proc_env", uvm_component parent);
 extern function void build_phase(uvm_phase phase);
-//extern function void connect_phase(uvm_phase phase);
+extern virtual function void connect_phase(uvm_phase phase);
 
 endclass
 	
@@ -32,8 +33,13 @@ endclass
 		agent2h=proc2_agent::type_id::create("agent2h",this);
                agent3h=proc3_agent::type_id::create("agent3h",this);
 		agent4h=proc4_agent::type_id::create("agent4h",this);
-	             
+		sbd1=scoreboard::type_id::create("sbd1",this);	             
                	super.build_phase(phase);
+endfunction
+
+virtual function void scoreboard ::connect_phase(uvm_phase phase);
+super.connect_phase(phase);
+agenth.monh.monitor_port.connect(sbd1.anp_imp);
 endfunction
  
 

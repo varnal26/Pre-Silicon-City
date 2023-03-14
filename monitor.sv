@@ -6,7 +6,7 @@ class proc_monitor extends uvm_monitor;
         parallel_processor_config m_cfg;
 	write_xtn  xtn;
 
-  // uvm_analysis_port #(write_xtn) monitor_port;
+   uvm_analysis_port #(write_xtn) monitor_port;
 
 extern function new(string name = "proc_monitor", uvm_component parent);
 extern function void build_phase(uvm_phase phase);
@@ -17,7 +17,7 @@ endclass
 
 function proc_monitor::new(string name = "proc_monitor", uvm_component parent);
 super.new(name,parent);
-//monitor_port = new("monitor_port", this);
+
 endfunction
 
 function void proc_monitor::build_phase(uvm_phase phase);
@@ -25,6 +25,8 @@ function void proc_monitor::build_phase(uvm_phase phase);
 
 	  if(!uvm_config_db #(parallel_processor_config)::get(this,"","parallel_processor_config",m_cfg))
 		`uvm_fatal("CONFIG","cannot get() m_cfg from uvm_config_db. Have you set() it?") 
+
+	monitor_port = new("monitor_port", this);
 endfunction
 
 function void proc_monitor::connect_phase(uvm_phase phase);
@@ -75,4 +77,5 @@ wait( vif.monitor1_cb.DONE);
 	//xtn.RW1      =vif.monitor1_cb.RW1;
 `uvm_info("MONITOR",$sformatf("printing from write monitor \n %s", xtn.sprint()),UVM_LOW)
 	end
+monitor_port.write(xtn);
 endtask
