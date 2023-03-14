@@ -13,7 +13,7 @@ rand bit [7:0] B[3:0];
 randc bit [3:0]OPCODE[3:0];
 //rand bit [4:0] ADDRESS1, ADDRESS2;
 rand bit [7:0] ADDRESS[3:0];
-bit [7:0]data_in[3:0];
+rand bit [7:0]data_in[3:0];
 bit [7:0]data_out;
 bit [15:0] RESULT[3:0];
 //rand bit [7:0] DATA1, DATA2, DATA3, DATA4;
