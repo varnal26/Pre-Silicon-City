@@ -11,7 +11,7 @@ scoreboard sbd1;
 
 extern function new(string name = "proc_env", uvm_component parent);
 extern function void build_phase(uvm_phase phase);
-extern virtual function void connect_phase(uvm_phase phase);
+extern function void connect_phase(uvm_phase phase);
 
 endclass
 	
@@ -37,9 +37,9 @@ endclass
                	super.build_phase(phase);
 endfunction
 
-virtual function void scoreboard ::connect_phase(uvm_phase phase);
+function void proc_env::connect_phase(uvm_phase phase);
 super.connect_phase(phase);
-agenth.monh.monitor_port.connect(sbd1.anp_imp);
+agenth.monh.monitor_port.connect(sbd1.item_collected_export);
 endfunction
  
 

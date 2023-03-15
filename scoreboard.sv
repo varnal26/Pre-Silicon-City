@@ -1,9 +1,36 @@
 class scoreboard extends uvm_scoreboard;
 
   `uvm_component_utils(scoreboard)
+  uvm_analysis_imp#(write_xtn, scoreboard) item_collected_export;
+
+  // new - constructor
+  function new (string name, uvm_component parent);
+    super.new(name, parent);
+  endfunction : new
+
+  function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    item_collected_export = new("item_collected_export", this);
+  endfunction: build_phase
+  
+  // write
+  virtual function void write(write_xtn xtn);
+    $display("SCB:: Pkt recived");
+    xtn.print();
+  endfunction : write
+
+endclass : scoreboard
+
+
+
+
+
+/*class scoreboard extends uvm_scoreboard;
+
+  `uvm_component_utils(scoreboard)
 
   // TLM Analysis Port to receive data objects from other TB components
-  uvm_analysis_imp#(write_xtn) anp_imp;
+  uvm_analysis_imp #(write_xtn) anp_imp;
 
   function new(string name = "scoreboard", uvm_component parent = null);
     super.new(name, parent);
@@ -51,4 +78,4 @@ class scoreboard extends uvm_scoreboard;
     phase.drop_objection(this);
   endtask
 
-
+endclass*/

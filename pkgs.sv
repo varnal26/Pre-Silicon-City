@@ -10,6 +10,7 @@ import uvm_pkg::*;
 `include "driver3.sv"
 `include "driver4.sv"
 `include "monitor.sv"
+`include "scoreboard.sv"
 `include "sequencer.sv"
 `include "sequencer2.sv"
 `include "sequencer3.sv"
@@ -21,6 +22,5 @@ import uvm_pkg::*;
 `include "sequence.sv"
 `include "env.sv"
 `include "test.sv"
-//`include "scoreboard.sv"
 
 endpackage
