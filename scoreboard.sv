@@ -2,6 +2,9 @@ class scoreboard extends uvm_scoreboard;
 
   `uvm_component_utils(scoreboard)
   uvm_analysis_imp#(write_xtn, scoreboard) item_collected_export;
+  parallel_processor_config m_cfg;
+	write_xtn  xtn;
+  virtual parallel_processor_if vif;
 
   // new - constructor
   function new (string name, uvm_component parent);
@@ -11,15 +14,64 @@ class scoreboard extends uvm_scoreboard;
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
     item_collected_export = new("item_collected_export", this);
+	
+	if(!uvm_config_db #(parallel_processor_config)::get(this,"","parallel_processor_config",m_cfg))
+		`uvm_fatal("CONFIG","cannot get() m_cfg from uvm_config_db. Have you set() it?") 
   endfunction: build_phase
+  
+  
+  function void connect_phase(uvm_phase phase);
+          vif = m_cfg.vif;
+endfunction
   
   // write
   virtual function void write(write_xtn xtn);
     $display("SCB:: Pkt recived");
     xtn.print();
   endfunction : write
+  
+  
+  task run_phase(uvm_phase phase);
+//write_xtn::type_id::create("xtn", this);
+    shortint expected_result;
+    
+    forever begin : self_checker
+     wait(vif.monitor1_cb.DONE[0]);
+    // @(vif.monitor1_cb);
+
+$display("beforestart:wa");
+      //wait(vif.driver1_cb.START[0]) ;
+$display("afterstrart");
+      case (vif.driver1_cb.OPCODE[0])
+      	4'b0001: expected_result = vif.driver1_cb.A[0] + vif.driver1_cb.B[0];
+        /*4'b0010: expected_result = vif.monitor1_cb.A[0] & xtn.B[0];
+        4'b0011: expected_result = xtn.A[0] ^ xtn.B[0];
+        4'b0100: expected_result = xtn.A[0] * xtn.B[0];*/
+      endcase
+$display("aftercase");
+//wait(vif.monitor1_cb.DONE[0]) ;
+
+$display("afterdone");
+      
+      //if ((bfm.op_set != no_op) && (bfm.op_set != rst_op)) begin
+        if (expected_result != vif.monitor1_cb.RESULT[0]) begin
+          $error ("FAILED: A: %0h  B: %0h  OPCODE: %s ACTUAL RESULT: %0h, EXPECTED RESULT : %0d", vif.driver1_cb.A[0], vif.driver1_cb.B[0], vif.driver1_cb.OPCODE[0], expected_result, vif.monitor1_cb.RESULT[0]);
+        end //if you have a result mismatch
+	else
+	$display ("PASSED: A: %0h  B: %0h  OPCODE: %s ACTUAL RESULT: %0h, EXPECTED RESULT : %0d", vif.driver1_cb.A[0], vif.driver1_cb.B[0], vif.driver1_cb.OPCODE[0], expected_result, vif.monitor1_cb.RESULT[0]);
+     // end //if not a noop or rst command
+     //@(vif.monitor1_cb);
+//@(vif.monitor1_cb);
+wait(vif.driver1_cb.START[0]);
+    end : self_checker
+  endtask : run_phase
 
 endclass : scoreboard
+
+
+
+
+
 
 
 
