@@ -62,7 +62,6 @@ $display("afterdone");
      // end //if not a noop or rst command
      //@(vif.monitor1_cb);
 //@(vif.monitor1_cb);
-wait(vif.driver1_cb.START[0]);
     end : self_checker
   endtask : run_phase
 
