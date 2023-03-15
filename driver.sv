@@ -19,7 +19,8 @@ endfunction
 function void proc_driver :: build_phase(uvm_phase phase);
 super.build_phase(phase);
 if(!uvm_config_db #(parallel_processor_config)::get(this,"","parallel_processor_config",m_cfg))
-`uvm_fatal("CONFIG","cannot get() m_cfg from uvm_config_db. Have you set() it?") 
+`uvm_fatal("CONFIG","cannot get() m_cfg from uvm_config_db. Have you set() it?")
+ 
  endfunction
 
 function void proc_driver::connect_phase(uvm_phase phase);

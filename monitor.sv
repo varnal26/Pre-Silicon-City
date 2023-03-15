@@ -48,6 +48,10 @@ task proc_monitor::run_phase(uvm_phase phase);
 begin
 wait( vif.monitor1_cb.DONE);
     //    xtn.A     = vif.monitor1_cb.A;
+	xtn.START[0] = vif.monitor1_cb.START[0];
+	xtn.START[1] = vif.monitor1_cb.START[1];
+	xtn.START[2] = vif.monitor1_cb.START[2];
+	xtn.START[3] = vif.monitor1_cb.START[3];
 	xtn.A[0]     = vif.monitor1_cb.A[0];
 	xtn.A[1]    = vif.monitor1_cb.A[1];
 	xtn.A[2]     = vif.monitor1_cb.A[2];
@@ -64,6 +68,10 @@ wait( vif.monitor1_cb.DONE);
 	xtn.ADDRESS[1]= vif.monitor1_cb.ADDRESS[1];
 	xtn.ADDRESS[2]= vif.monitor1_cb.ADDRESS[2];
 	xtn.ADDRESS[3]= vif.monitor1_cb.ADDRESS[3];
+	xtn.DONE[0] = vif.monitor1_cb.DONE[0];
+	xtn.DONE[1] = vif.monitor1_cb.DONE[1];
+	xtn.DONE[2] = vif.monitor1_cb.DONE[2];
+	xtn.DONE[3] = vif.monitor1_cb.DONE[3];
 	xtn.RESULT[0]=vif.monitor1_cb.RESULT[0];
 	xtn.RESULT[1]=vif.monitor1_cb.RESULT[1];
 	xtn.RESULT[2]=vif.monitor1_cb.RESULT[2];
@@ -73,9 +81,14 @@ wait( vif.monitor1_cb.DONE);
 	xtn.data_in[2]   =  vif.monitor1_cb.data_in[2];
 	xtn.data_in[3]   =  vif.monitor1_cb.data_in[3];
 	xtn.data_out   =  vif.monitor1_cb.data_out;
+	
          @(vif.monitor1_cb);
 	//xtn.RW1      =vif.monitor1_cb.RW1;
 `uvm_info("MONITOR",$sformatf("printing from write monitor \n %s", xtn.sprint()),UVM_LOW)
-	end
 monitor_port.write(xtn);
+	end
+
 endtask
+        
+
+         

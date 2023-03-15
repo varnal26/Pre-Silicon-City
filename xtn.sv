@@ -15,11 +15,15 @@ bit [15:0] RESULT[3:0];
 //rand bit RW1, RW2;
 //bit START1;
 bit START[3:0];
+bit DONE[3:0];
 `uvm_object_utils_begin(write_xtn)
 	`uvm_field_int(A[0],UVM_ALL_ON)
 	`uvm_field_int(B[0],UVM_ALL_ON)
 	`uvm_field_int(OPCODE[0],UVM_ALL_ON)
 	`uvm_field_int(ADDRESS[0],UVM_ALL_ON)
+	`uvm_field_int(START[0],UVM_ALL_ON)
+	`uvm_field_int(DONE[0],UVM_ALL_ON)
+	`uvm_field_int(RESULT[0],UVM_ALL_ON)
 	`uvm_object_utils_end	
 function new(string name = "write_xtn");
 super.new(name);

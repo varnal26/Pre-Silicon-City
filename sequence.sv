@@ -18,7 +18,7 @@ req=write_xtn::type_id::create("req");  //Creating the memory for the transactio
 repeat(16)
 begin
 	   start_item(req);   // Handshaking between sequence and driver. 
-   	   assert(req.randomize() with {OPCODE[0]==4'b0001; /*OPCODE[1]<4'b1000; OPCODE[2]<4'b1000; OPCODE[3]<4'b1000;*/});   // Randamoizing the transaction class
+   	   assert(req.randomize() with {OPCODE[0]<4'b0100; /*OPCODE[1]<4'b1000; OPCODE[2]<4'b1000; OPCODE[3]<4'b1000;*/});   // Randamoizing the transaction class
 	   `uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH) 
 	   finish_item(req);
 end
