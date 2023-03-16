@@ -100,6 +100,7 @@ endmodule
 		//valid <=0;
        case (state_load_store) 
 			IDLE_S: begin
+	if(start)begin
               if (cache_miss && (op == 4'b1000)) begin
 					next_state_load_store = REQ_S;
 			    end
@@ -107,6 +108,7 @@ endmodule
 					next_state_load_store = REQ_S;
 					
 				end
+	end
 			
          		 //valid = 0;
             end
@@ -120,6 +122,7 @@ endmodule
 			     end
 			ADDR_LOAD_S: begin address_m = address; 
 						//rw = 0;
+						req=0;
 						if(op == 4'b1001)begin
 							data = input_data;
 						end
@@ -140,6 +143,7 @@ endmodule
 						data = input_data;
 					end*/
 					 complete = 1;
+			next_state_load_store = IDLE_S;
               		 //done = 1;
              //next_state_store = VALID_SET;
 				    end
@@ -277,7 +281,7 @@ endmodule : multi_cycle*/
 
 module multi_cycle(input [7:0] A,
 		   input [7:0] B,
-		   input [2:0] op,
+		   input [3:0] op,
 		   input clk,
 		   input reset,
 		   input start,
