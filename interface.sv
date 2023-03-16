@@ -114,7 +114,7 @@ input RW4;
 //inout data_out;
 endclocking
 
-clocking monitor1_cb @(negedge clock);
+clocking monitor1_cb @(posedge clock);
 default input #1 output #1; 
 input RESETn;
 input A, B;
@@ -190,5 +190,4 @@ modport MONITOR1_MP(clocking monitor1_cb);
 modport MEM_DRIVER_MP(clocking mem_driver_cb);
 
 endinterface
-
 
