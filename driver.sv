@@ -44,7 +44,7 @@ endtask
 task proc_driver::send_to_dut(write_xtn xtn);
 `uvm_info("PROC_DRIVER",$sformatf("printing from write driver \n %s", xtn.sprint()),UVM_HIGH) 
 @(vif.driver1_cb);
-	fork
+	//fork
        begin
 	//do  begin
  	//wait(!vif.driver1_cb.BUSY1);
@@ -57,7 +57,7 @@ task proc_driver::send_to_dut(write_xtn xtn);
 	wait(vif.driver1_cb.DONE[0] | vif.driver1_cb.OPCODE[0]==4'b0000);
 	vif.driver1_cb.START[0]<=1'b0;
 	end
-	begin
+	/*begin
 	vif.driver1_cb.START[1]<=1'b1;
 	vif.driver1_cb.A[1] <= xtn.A[1];
 	vif.driver1_cb.B[1]  <= xtn.B[1];
@@ -85,7 +85,7 @@ task proc_driver::send_to_dut(write_xtn xtn);
 	vif.driver1_cb.START[3]<=1'b0;
 	end
 
-	join_none
+	join_none*/
 
 endtask
 		
