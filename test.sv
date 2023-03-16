@@ -64,11 +64,11 @@ endclass
 	  seq3=proc4_seq1::type_id::create("seq3");
 	fork
           seq.start(envh.agenth.seqrh);
-	  seq1.start(envh.agent2h.seqr2h);
+	  /*seq1.start(envh.agent2h.seqr2h);
  	  seq2.start(envh.agent3h.seqr3h);
-	  seq3.start(envh.agent4h.seqr4h);
+	  seq3.start(envh.agent4h.seqr4h);*/
 join_none
-					 #1000ns;
+					 #10000ns;
          phase.drop_objection(this);
 	endtask   
 

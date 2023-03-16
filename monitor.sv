@@ -84,7 +84,7 @@ wait( vif.monitor1_cb.DONE);
 	
          @(vif.monitor1_cb);
 	//xtn.RW1      =vif.monitor1_cb.RW1;
-`uvm_info("MONITOR",$sformatf("printing from write monitor \n %s", xtn.sprint()),UVM_LOW)
+`uvm_info("MONITOR",$sformatf("printing from write monitor \n %s", xtn.sprint()),UVM_HIGH)
 monitor_port.write(xtn);
 	end
 

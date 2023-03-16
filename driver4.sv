@@ -35,7 +35,7 @@ end
 endtask
 
 task proc4_driver::send_to_dut(write_xtn xtn);
-`uvm_info("PROC_DRIVER",$sformatf("printing from write driver \n %s", xtn.sprint()),UVM_LOW) 
+`uvm_info("PROC_DRIVER",$sformatf("printing from write driver \n %s", xtn.sprint()),UVM_HIGH) 
       @(vif.driver1_cb);
 begin
 	vif.driver1_cb.START[3]<=1'b1;

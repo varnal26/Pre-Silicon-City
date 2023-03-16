@@ -34,7 +34,7 @@ task proc3_driver::run_phase(uvm_phase phase);
 endtask
 
 task proc3_driver::send_to_dut(write_xtn xtn);
-`uvm_info("PROC3_DRIVER",$sformatf("printing from write driver \n %s", xtn.sprint()),UVM_LOW) 
+`uvm_info("PROC3_DRIVER",$sformatf("printing from write driver \n %s", xtn.sprint()),UVM_HIGH) 
 @(vif.driver1_cb);
       begin
 	vif.driver1_cb.START[2]<=1'b1;
