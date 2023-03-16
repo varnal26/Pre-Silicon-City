@@ -7,9 +7,9 @@ endfunction
 endclass
 
 
-class proc1_seq extends proc_base_seq; // Transaction class as arg
-`uvm_object_utils(proc1_seq)
-function new (string name = "proc1_seq");
+class proc1_seq1 extends proc_base_seq; // Transaction class as arg
+`uvm_object_utils(proc1_seq1)
+function new (string name = "proc1_seq1");
 super.new(name);
 endfunction               //Constructor
 
@@ -18,7 +18,7 @@ req=write_xtn::type_id::create("req");  //Creating the memory for the transactio
 repeat(16)
 begin
 	   start_item(req);   // Handshaking between sequence and driver. 
-   	   assert(req.randomize() with {OPCODE[0]<4'b0100; /*OPCODE[1]<4'b1000; OPCODE[2]<4'b1000; OPCODE[3]<4'b1000;*/});   // Randamoizing the transaction class
+   	   assert(req.randomize() with {OPCODE[0]<4'b0101; /*OPCODE[1]<4'b1000; OPCODE[2]<4'b1000; OPCODE[3]<4'b1000;*/});   // Randamoizing the transaction class
 	   `uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH) 
 	   finish_item(req);
 end
@@ -26,18 +26,18 @@ endtask
 
 endclass
 
-class proc1_seq1 extends proc_base_seq;
-`uvm_object_utils(proc1_seq1)
+class proc2_seq1 extends proc_base_seq;
+`uvm_object_utils(proc2_seq1)
 
-extern function new(string name = "proc1_seq1");
+extern function new(string name = "proc2_seq1");
 extern task body();
 endclass
 
-function proc1_seq1::new(string name = "proc1_seq1");
+function proc2_seq1::new(string name = "proc2_seq1");
 super.new(name);
 endfunction
 
-task proc1_seq1::body();
+task proc2_seq1::body();
 req=write_xtn::type_id::create("req");
 repeat(16)
 begin
@@ -82,6 +82,96 @@ super.new(name);
 endfunction
 
 task proc4_seq1::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[3] < 4'b1000;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+//////////////seq2
+class proc1_seq2 extends proc_base_seq;
+`uvm_object_utils(proc1_seq2)
+
+extern function new(string name = "proc1_seq2");
+extern task body();
+endclass
+
+function proc1_seq2::new(string name = "proc1_seq2");
+super.new(name);
+endfunction
+
+task proc1_seq2::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[0] == 4'b1001 || OPCODE[0] == 4'b0011;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+
+
+
+class proc2_seq2 extends proc_base_seq;
+`uvm_object_utils(proc2_seq2)
+
+extern function new(string name = "proc2_seq2");
+extern task body();
+endclass
+
+function proc2_seq2::new(string name = "proc2_seq2");
+super.new(name);
+endfunction
+
+task proc2_seq2::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[1] == 4'b1001 || OPCODE[1] == 4'b0011;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+
+class proc3_seq2 extends proc_base_seq;
+`uvm_object_utils(proc3_seq2)
+
+extern function new(string name = "proc3_seq2");
+extern task body();
+endclass
+
+function proc3_seq2::new(string name = "proc3_seq2");
+super.new(name);
+endfunction
+
+task proc3_seq2::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[2] < 4'b1000;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+
+class proc4_seq2 extends proc_base_seq;
+`uvm_object_utils(proc4_seq2)
+
+extern function new(string name = "proc4_seq2");
+extern task body();
+endclass
+
+function proc4_seq2::new(string name = "proc4_seq2");
+super.new(name);
+endfunction
+
+task proc4_seq2::body();
 req=write_xtn::type_id::create("req");
 repeat(16)
 begin

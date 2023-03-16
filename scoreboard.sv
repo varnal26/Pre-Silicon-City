@@ -48,8 +48,8 @@ endtask
     //forever begin : self_checker
 
     shortint expected_result;
-@(posedge vif.clock);
-#1;
+@(posedge vif.monitor1_cb.DONE[0]);
+//#10;
 //wait(xtn.START[0]) begin
 //	wait(vif.driver1_cb.START[0]) begin
     //wait(vif.monitor1_cb.DONE[0]) begin

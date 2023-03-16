@@ -40,7 +40,7 @@ initial
 begin
 uvm_config_db#(virtual parallel_processor_if)::set(null, "*", "vif", intf);
 $display("%p", intf);
-run_test("test");
+run_test("test2");
 end
 
 initial begin
