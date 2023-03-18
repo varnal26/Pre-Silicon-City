@@ -61,7 +61,7 @@ module processor (input logic [7:0] A,
 	cache cache_inst(.clk, .reset, .address, .op, .input_data(internal_data), .data(data_cache), .rw, .busy, .miss(cache_miss));  
 	
 	//load_store operation instantiation
-  load_store load_store_inst(.A, .B, .clk, .reset, .start(start_load_store), .address, .op, .done(done_load_store), .cache_miss, .address_m, .valid(valid_check), .req, .ack, .busy, .complete, .rw, .input_data(internal_data), .data, .valid_mem);
+  load_store load_store_inst(.A, .B, .clk, .reset, .start(start_load_store), .address, .op, .done(done_load_store), .cache_miss, .address_m, .valid(valid_check), .req, .ack, .busy,.complete, .rw, .input_data(internal_data), .data, .valid_mem);
   
   assign valid = valid_check;
 
@@ -88,8 +88,9 @@ endmodule
 		input bit cache_miss,
 		//input bit load_store, //read write signal to memory
 		output logic [7:0]data,
-		output bit complete,
-		output bit rw);  // to indicate the completion of load operation from memory side
+		output bit complete,// to indicate the completion of load operation from memory side
+		output bit rw);
+		//output bit [15:0]result);  
 		
    typedef enum {IDLE_S, REQ_S, ACK_S, ADDR_LOAD_S, RESULT_STATE_S, VALID_SET}load_store_states;
 	load_store_states state_load_store, next_state_load_store;
@@ -143,6 +144,9 @@ endmodule
 						data = input_data;
 					end*/
 					 complete = 1;
+					rw=0;
+			//result = (rw==0)? data_in : data_mem_in;
+			//else result = data_mem_in;
 			next_state_load_store = IDLE_S;
               		 //done = 1;
              //next_state_store = VALID_SET;
