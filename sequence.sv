@@ -181,6 +181,97 @@ begin
 	finish_item(req);
 end
 endtask
+///////////////////////////////////////////////////////////////////////
 
+class proc1_seq3 extends proc_base_seq;
+`uvm_object_utils(proc1_seq3)
+
+extern function new(string name = "proc1_seq3");
+extern task body();
+endclass
+
+function proc1_seq3::new(string name = "proc1_seq3");
+super.new(name);
+endfunction
+
+task proc1_seq3::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[0] == 4'b1010;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+
+
+
+class proc2_seq3 extends proc_base_seq;
+`uvm_object_utils(proc2_seq3)
+
+extern function new(string name = "proc2_seq3");
+extern task body();
+endclass
+
+function proc2_seq3::new(string name = "proc2_seq3");
+super.new(name);
+endfunction
+
+task proc2_seq3::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[1] == 4'b1011;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+
+class proc3_seq3 extends proc_base_seq;
+`uvm_object_utils(proc3_seq3)
+
+extern function new(string name = "proc3_seq3");
+extern task body();
+endclass
+
+function proc3_seq3::new(string name = "proc3_seq3");
+super.new(name);
+endfunction
+
+task proc3_seq3::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[2] == 4'b0000;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
+
+
+class proc4_seq3 extends proc_base_seq;
+`uvm_object_utils(proc4_seq3)
+
+extern function new(string name = "proc4_seq3");
+extern task body();
+endclass
+
+function proc4_seq3::new(string name = "proc4_seq3");
+super.new(name);
+endfunction
+
+task proc4_seq3::body();
+req=write_xtn::type_id::create("req");
+repeat(16)
+begin
+	start_item(req);
+	assert(req.randomize() with {OPCODE[3] == 4'b0000;});
+	`uvm_info("WR_SEQUENCE",$sformatf("printing from sequence \n %s", req.sprint()),UVM_HIGH)
+	finish_item(req);
+end
+endtask
 
 

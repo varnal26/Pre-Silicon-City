@@ -54,7 +54,7 @@ task proc_driver::send_to_dut(write_xtn xtn);
 	vif.driver1_cb.OPCODE[0]  <= xtn.OPCODE[0];
 	vif.driver1_cb.ADDRESS[0]  <= xtn.ADDRESS[0];
 	vif.driver1_cb.data_in[0] <= xtn.data_in[0];
-	wait(vif.driver1_cb.DONE[0] | vif.driver1_cb.OPCODE[0]==4'b0000);
+	wait(vif.driver1_cb.DONE[0] /*| vif.driver1_cb.OPCODE[0]==4'b0000*/);
 	vif.driver1_cb.START[0]<=1'b0;
 	end
 	/*begin

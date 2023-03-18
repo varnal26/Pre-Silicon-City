@@ -43,7 +43,7 @@ begin
 	vif.driver1_cb.B[3]  <= xtn.B[3];
 	vif.driver1_cb.OPCODE[3]  <= xtn.OPCODE[3];
 	vif.driver1_cb.ADDRESS[3]  <= xtn.ADDRESS[3];
-	wait(vif.driver1_cb.DONE[3] | vif.driver1_cb.OPCODE[3]==4'b0000);
+	wait(vif.driver1_cb.DONE[3] /*| vif.driver1_cb.OPCODE[3]==4'b0000*/);
 	vif.driver1_cb.START[3]<=1'b0;
 	end
 

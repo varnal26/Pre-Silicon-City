@@ -42,7 +42,7 @@ task proc3_driver::send_to_dut(write_xtn xtn);
 	vif.driver1_cb.B[2]  <= xtn.B[2];
 	vif.driver1_cb.OPCODE[2]  <= xtn.OPCODE[2];
 	vif.driver1_cb.ADDRESS[2]  <= xtn.ADDRESS[2];
-	wait(vif.driver1_cb.DONE[2] | vif.driver1_cb.OPCODE[2]==4'b0000);
+	wait(vif.driver1_cb.DONE[2] /*| vif.driver1_cb.OPCODE[2]==4'b0000*/);
 	vif.driver1_cb.START[2]<=1'b0;
 	end
 endtask
