@@ -194,7 +194,7 @@ arbiter U (
   always_comb begin
     if(reset) begin
     	for(int i=0;i<64;i=i+1)begin
-      		mem[i] <= data_in;
+      		mem[i] <= 8'b00001000;
     	end
   	end else begin
       if(valid) begin
