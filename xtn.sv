@@ -5,7 +5,7 @@ class write_xtn extends uvm_sequence_item;
 rand bit [7:0] A[3:0]; 
 rand bit [7:0] B[3:0];
 //randc bit [3:0] OPCODE1, OPCODE2,OPCODE3, OPCODE4;
-randc bit [3:0]OPCODE[3:0];
+rand bit [3:0]OPCODE[3:0];
 //rand bit [4:0] ADDRESS1, ADDRESS2;
 rand bit [7:0] ADDRESS[3:0];
 rand bit [7:0]data_in[3:0];

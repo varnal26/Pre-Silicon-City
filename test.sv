@@ -157,9 +157,93 @@ join_none
 					 #1000ns;
          phase.drop_objection(this);
 	endtask   
+//////////////////////////////////////////////////////////////////////
+class test4 extends parallel_processor_base_test;
+`uvm_component_utils(test4)
+proc1_seq4 seq;
+proc2_seq4 seq1;
+proc3_seq4 seq2;
+proc4_seq4 seq3;
+
+extern function new(string name = "test4" , uvm_component parent);
+	extern function void build_phase(uvm_phase phase);
+	extern task run_phase(uvm_phase phase);
+endclass
+
+   	function test4::new(string name = "test4" , uvm_component parent);
+		super.new(name,parent);
+	endfunction
 
 
+            
+	function void test4::build_phase(uvm_phase phase);
+            super.build_phase(phase);
+	
+	endfunction
 
+
+      	task test4::run_phase(uvm_phase phase);
+	 super.run_phase(phase);
+		
+          phase.raise_objection(this);
+	  seq=proc1_seq4::type_id::create("seq");
+	  seq1=proc2_seq4::type_id::create("seq1");
+	  seq2=proc3_seq4::type_id::create("seq2");
+	  seq3=proc4_seq4::type_id::create("seq3");
+	fork
+          seq.start(envh.agenth.seqrh);
+	join
+	fork
+	  seq1.start(envh.agent2h.seqr2h);
+ 	  seq2.start(envh.agent3h.seqr3h);
+	  seq3.start(envh.agent4h.seqr4h);
+join_none
+					 #10000ns;
+         phase.drop_objection(this);
+	endtask  
+
+////////////////////////////////////////////////////////////////
+class test5 extends parallel_processor_base_test;
+`uvm_component_utils(test5)
+proc1_seq5 seq;
+proc2_seq5 seq1;
+proc3_seq5 seq2;
+proc4_seq5 seq3;
+
+extern function new(string name = "test5" , uvm_component parent);
+	extern function void build_phase(uvm_phase phase);
+	extern task run_phase(uvm_phase phase);
+endclass
+
+   	function test5::new(string name = "test5" , uvm_component parent);
+		super.new(name,parent);
+	endfunction
+
+
+            
+	function void test5::build_phase(uvm_phase phase);
+            super.build_phase(phase);
+	
+	endfunction
+
+
+      	task test5::run_phase(uvm_phase phase);
+	 super.run_phase(phase);
+		
+          phase.raise_objection(this);
+	  seq=proc1_seq5::type_id::create("seq");
+	  seq1=proc2_seq5::type_id::create("seq1");
+	  seq2=proc3_seq5::type_id::create("seq2");
+	  seq3=proc4_seq5::type_id::create("seq3");
+	fork
+          seq.start(envh.agenth.seqrh);
+	  seq1.start(envh.agent2h.seqr2h);
+ 	  seq2.start(envh.agent3h.seqr3h);
+	  seq3.start(envh.agent4h.seqr4h);
+join_none
+					 #10000ns;
+         phase.drop_objection(this);
+	endtask  
 
 /*class test1 extends parallel_processor_base_test;
 `uvm_component_utils(test1)
