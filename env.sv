@@ -1,3 +1,4 @@
+
 	class proc_env extends uvm_env;
 
         
@@ -6,6 +7,7 @@ proc_agent agenth;
 proc2_agent agent2h;
 proc3_agent agent3h;
 proc4_agent agent4h;
+coverage coverage_h;
 scoreboard sbd1;
 
 
@@ -33,14 +35,13 @@ endclass
 		agent2h=proc2_agent::type_id::create("agent2h",this);
                agent3h=proc3_agent::type_id::create("agent3h",this);
 		agent4h=proc4_agent::type_id::create("agent4h",this);
+		 coverage_h= coverage::type_id::create("coverage_h", this);
 		sbd1=scoreboard::type_id::create("sbd1",this);	             
                	super.build_phase(phase);
 endfunction
 
 function void proc_env::connect_phase(uvm_phase phase);
 super.connect_phase(phase);
+//agenth.monh.monitor_port.connect(coverage_h.item_collected_export);
 agenth.monh.monitor_port.connect(sbd1.item_collected_export);
 endfunction
- 
-
-
